@@ -6,7 +6,7 @@
 */
 
 h1{
-    font-size: 3em !important;
+    font-size: 3em;
 }
 header {
     text-align: center;
@@ -77,6 +77,21 @@ section {
     margin-top: 20px;
     text-align: center;
 }
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact a {
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+#contact img {
+    max-width: 100%;
+    max-height: 100px; /* Adjust the maximum height as needed */
+    height: auto;
+}
 
 section h2 {
     font-family: 'Climate Crisis', sans-serif;
@@ -94,11 +109,14 @@ section h2 {
     color: #3C2A21;
 }
 footer {
-    text-align: center;
-    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+}
+footer p {
+    margin: 20px;
 }
 
 .blog-container{

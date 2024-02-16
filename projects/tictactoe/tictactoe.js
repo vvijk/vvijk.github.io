@@ -96,12 +96,12 @@ function validateForm(){
     try {
         // NAMNCHECK
         if(document.querySelector('#nick1').value.length < min_name_length){
-            alert("NickName1 är för kort")
-            throw("NickName1 är för kort");
+            alert("NickName 1 is too short")
+            throw("NickName 1 is too short");
         }
         if(document.querySelector('#nick2').value.length < min_name_length){
-            alert("NickName2 is too short")
-            throw("Nickname2 är för kort");
+            alert("NickName 2 is too short")
+            throw("Nickname 2 is too short");
         }
         if(document.querySelector('#nick2').value === document.querySelector('#nick1').value){
             alert("Same nickname not allowed...")
@@ -111,10 +111,10 @@ function validateForm(){
         let colorP1 = document.querySelector('#color1').value;
         let colorP2 = document.querySelector('#color2').value;
         if(colorP1 == white || colorP1 == black){
-            throw("Player 1 has a forbidden colour");
+            throw("Player 1 has a forbidden color");
         }
         if(colorP2 == white || colorP2 == black){
-            throw("Player 1 has a forbidden colour");
+            throw("Player 1 has a forbidden color");
         }
         if(colorP1 === colorP2){
             throw("Players cant have same color!");

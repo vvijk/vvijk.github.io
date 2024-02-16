@@ -1,9 +1,10 @@
-/*
-#1A120B
-#3C2A21
-#D5CEA3
-#E5E5CB
-*/
+/* Define colors as variables for reusability */
+:root {
+    --dark-brown: #1A120B;
+    --light-brown: #3C2A21;
+    --light-yellow: #D5CEA3;
+    --light-cream: #E5E5CB;
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -12,8 +13,8 @@ h1{
     font-family: 'Climate Crisis';
 }
 header{
-    background-color: #3C2A21;
-    color: #E5E5CB;
+    background-color: var(--light-brown);
+    color: var(--light-cream);
     font-size: larger;
     border-radius: 20px;
     padding-bottom: 10px;
@@ -22,22 +23,28 @@ header{
 nav{
     justify-content: center;
     padding: 30px;
-    background-color: #3C2A21;
+    background-color: var(--light-brown);
     border-radius: 20px;
 }
 nav button{
     padding: 5px 10px;
-    background-color: #E5E5CB;
+    background-color: var(--light-cream);
     border: none;
     border-radius: 10px;
     cursor: pointer;
     color: black;
     font-family: 'Climate Crisis', sans-serif;
 }
+.button-container {
+    margin-top: 10px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+}
+
 .res{
     font-family: 'Climate Crisis', sans-serif;
-    background-color: #E5E5CB;
-    color: #3C2A21;
+    background-color: var(--light-cream);
+    color: var(--light-brown);
     border-radius: 20px;
     font-size: 200%;
 }
@@ -49,14 +56,14 @@ nav button{
     font-style: uppercase;
     border-radius: 10px;
     text-align: center; 
-    background-color: #D5CEA3;
+    background-color: var(--light-yellow);
 }
 #result{
-    background-color: #3C2A21;
+    background-color: var(--light-brown);
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    color: #D5CEA3;
+    color: var(--light-yellow);
     font-style: bold;
     font-size: larger;
 }

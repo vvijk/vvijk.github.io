@@ -1,0 +1,128 @@
+/*
+#1A120B
+#3C2A21
+#D5CEA3
+#E5E5CB
+*/
+
+h1{
+    font-size: 3em !important;
+}
+header {
+    text-align: center;
+    color: #1A120B;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: 'Climate Crisis';
+}
+nav, section, .project, footer {
+    background-color: #3C2A21;
+    color: #E5E5CB;
+    font-family: 'Exo 2', sans-serif;
+}
+nav {
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul{
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 2%;
+}
+nav form {
+    display: flex;
+}
+nav input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+nav button {
+    padding: 5px 10px;
+    background-color: #E5E5CB;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3C2A21;
+    text-transform: uppercase;
+    font-family: 'Climate Crisis', sans-serif;
+}
+nav button:hover {
+    background-color: #D5CEA3;
+}
+
+nav ul li a {
+    color:#E5E5CB;
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #3C2A21;
+    transition: color 0.2s;
+    background-color: #E5E5CB;
+    border-radius: 3px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Climate Crisis', sans-serif;
+}
+
+.project-post {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #1A120B;
+    cursor: pointer;
+}
+.project-post:hover{    
+    background-color: #E5E5CB;
+    color: #3C2A21;
+}
+footer {
+    text-align: center;
+    padding: 4px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-container{
+    border-radius: 20px;
+}
+.blog-post {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1A120B;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #1a120bfc;
+}
+
+.blog-container {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.blog-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.blog-container::-webkit-scrollbar-thumb {
+    background-color: #D5CEA3;
+    border-radius: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="wordle-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Ordle helper</h1>
+            <p>Enter what you got and get your suggestions!</p>
+        </header>
+        
+        <nav>
+            <label class="entry-label" for="inputA">
+                <input id="inputA" class="entry" type="text" maxlength="1" placeholder="_">
+            </label>
+            
+            <label class="entry-label" for="inputB">
+                <input id="inputB" class="entry" type="text" maxlength="1" placeholder="_">
+            </label>
+            
+            <label class="entry-label" for="inputC">
+                <input id="inputC" class="entry" type="text" maxlength="1" placeholder="_">
+            </label>
+            
+            <label class="entry-label" for="inputD">
+                <input id="inputD" class="entry" type="text" maxlength="1" placeholder="_">
+            </label>
+            
+            <label class="entry-label" for="inputE">
+                <input id="inputE" class="entry" type="text" maxlength="1" placeholder="_">
+            </label>
+            
+            <button id="find">Find</button>
+            <button id="clear">clear</button>
+            <button id="back">Back</button>
+
+        </nav>
+        
+        <section id="result"></section>
+
+    </main>
+
+    <script type="module" src="wordle-script.js" defer></script>
+
+</body>
+</html>

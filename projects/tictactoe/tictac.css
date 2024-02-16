@@ -1,0 +1,87 @@
+/*
+#1A120B
+#3C2A21
+#D5CEA3
+#E5E5CB
+*/
+h1{
+  font-size: 3em !important;
+  font-family: 'Climate Crisis';
+}
+body{
+  padding: 20px;
+}
+#backBtn{
+  background-color: #E5E5CB;
+  border-radius: 10px;
+  font-family: 'Climate Crisis';
+  width: 20%;
+}
+#backBtn:hover{
+  background-color: #3C2A21;
+  color: #E5E5CB;
+}
+.jumbotron {
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  font-size: larger;
+  border-radius: 20px;
+}
+form{
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  border-radius: 20px; 
+  text-align: center;
+}
+#divInForm{
+  padding: 10px;
+}
+#gameArea{
+  background-color: #3C2A21;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+#newGame{
+  font-family: 'Climate Crisis';
+
+}
+.form-control{
+  margin: 10px;
+}
+td {
+    width: 125px;
+    height: 125px;    
+    font-size: 50px;
+    text-align: center;
+    border-radius: 100px;
+}
+td:hover {
+    transform: scale(1.2);
+}
+/* Winner fade */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease; /* You can adjust the duration (2s) as needed */
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s ease infinite; /* Adjust the duration (2s) as needed */
+  }

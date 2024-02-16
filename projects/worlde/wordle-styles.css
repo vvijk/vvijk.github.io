@@ -12,7 +12,6 @@ h1{
     font-family: 'Climate Crisis';
 }
 header{
-    font-size: 2em !important;
     background-color: #3C2A21;
     color: #E5E5CB;
     font-size: larger;
@@ -22,7 +21,7 @@ header{
 }
 nav{
     justify-content: center;
-    padding: 10px;
+    padding: 30px;
     background-color: #3C2A21;
     border-radius: 20px;
 }

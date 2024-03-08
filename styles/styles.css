@@ -108,16 +108,6 @@ section h2 {
     background-color: #E5E5CB;
     color: #3C2A21;
 }
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-footer p {
-    margin: 20px;
-}
 
 .blog-container{
     border-radius: 20px;

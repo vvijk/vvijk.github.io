@@ -81,15 +81,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 #contact a {
-    margin: 0 10px; /* Adjust margin as needed */
+    margin: 0 10px;
 }
 
 #contact img {
     max-width: 100%;
-    max-height: 100px; /* Adjust the maximum height as needed */
+    max-height: 100px;
     height: auto;
 }
 
@@ -119,17 +120,14 @@ section h2 {
     border-radius: 20px;
     box-shadow: 5px 5px 20px #1a120bfc;
 }
-
 .blog-container {
     max-height: 300px;
     overflow-y: auto;
     scrollbar-width: thin;
 }
-
 .blog-container::-webkit-scrollbar {
     width: 5px;
 }
-
 .blog-container::-webkit-scrollbar-thumb {
     background-color: #D5CEA3;
     border-radius: 10px;

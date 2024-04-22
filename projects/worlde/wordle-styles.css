@@ -1,69 +1,58 @@
-/* Define colors as variables for reusability */
-:root {
-    --dark-brown: #1A120B;
-    --light-brown: #3C2A21;
-    --light-yellow: #D5CEA3;
-    --light-cream: #E5E5CB;
-}
-body {
-    font-family: Arial, sans-serif;
+/* Basic styling for the container and text */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
 }
-h1{
+
+header{
     font-family: 'Climate Crisis';
 }
-header{
-    background-color: var(--light-brown);
-    color: var(--light-cream);
-    font-size: larger;
-    border-radius: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+button{
+
 }
-nav{
-    justify-content: center;
-    padding: 30px;
-    background-color: var(--light-brown);
-    border-radius: 20px;
+/* Style for the input fields */
+.entry {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s, background-color 0.3s;
+    caret-color: transparent;  /* Add this line to hide the blinking cursor */
 }
-nav button{
-    padding: 5px 10px;
-    background-color: var(--light-cream);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: black;
-    font-family: 'Climate Crisis', sans-serif;
-}
-.button-container {
-    margin-top: 10px; /* Adjust as needed */
-    display: flex;
-    justify-content: center;
+.entry:focus {
+    outline: none; /* Remove focus outline to clean up UI */
+    border-bottom: 2px solid red; /* Use any color that suits the design */
+    animation: blink-cursor 0.7s steps(1) infinite; /* Blinking effect */
 }
 
-.res{
-    font-family: 'Climate Crisis', sans-serif;
-    background-color: var(--light-cream);
-    color: var(--light-brown);
-    border-radius: 20px;
-    font-size: 200%;
+@keyframes blink-cursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: red;
+    }
 }
-.entry{
-    height: 50px;
-    width: 50px;
-    font-size: 200%;
-    cursor: pointer;
-    font-style: uppercase;
-    border-radius: 10px;
-    text-align: center; 
-    background-color: var(--light-yellow);
+
+/* Color coding according to Wordle rules */
+.correct {
+    background-color: #6aaa64; /* Green for correct letters */
+    border-color: #6aaa64;
+    color: white;
 }
-#result{
-    background-color: var(--light-brown);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    color: var(--light-yellow);
-    font-style: bold;
-    font-size: larger;
+
+.present {
+    background-color: #c9b458; /* Yellow for present but wrong position letters */
+    border-color: #c9b458;
+    color: white;
+}
+
+.absent {
+    background-color: #787c7e; /* Gray for absent letters */
+    border-color: #787c7e;
+    color: white;
 }

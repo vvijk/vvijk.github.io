@@ -12,34 +12,34 @@
     <main class="container">
         <header>
             <h1>(SWE) Wordle helper</h1>
-            <p>Enter what you got and get your suggestions!</p>
+            <p>Enter what you got and get your suggestions! User space-bar to cycle through status, green, yellow, gray or white</p>
         </header>
         
         <nav>
             <label class="entry-label" for="inputA">
-                <input id="inputA" class="entry" type="text" maxlength="1" placeholder="_">
+                <input id="inputA" class="entry" type="text" maxlength="1" placeholder="_" autocomplete="off" data-status="unknown" tabindex="0">
             </label>
             
             <label class="entry-label" for="inputB">
-                <input id="inputB" class="entry" type="text" maxlength="1" placeholder="_">
+                <input id="inputB" class="entry" type="text" maxlength="1" placeholder="_" autocomplete="off" data-status="unknown" tabindex="0">
             </label>
             
             <label class="entry-label" for="inputC">
-                <input id="inputC" class="entry" type="text" maxlength="1" placeholder="_">
+                <input id="inputC" class="entry" type="text" maxlength="1" placeholder="_" autocomplete="off" data-status="unknown" tabindex="0">
             </label>
             
             <label class="entry-label" for="inputD">
-                <input id="inputD" class="entry" type="text" maxlength="1" placeholder="_">
+                <input id="inputD" class="entry" type="text" maxlength="1" placeholder="_" autocomplete="off" data-status="unknown" tabindex="0">
             </label>
             
             <label class="entry-label" for="inputE">
-                <input id="inputE" class="entry" type="text" maxlength="1" placeholder="_">
+                <input id="inputE" class="entry" type="text" maxlength="1" placeholder="_" autocomplete="off" data-status="unknown" tabindex="0">
             </label>
             
             <div class="button-container">
-                <button id="find">Find</button>
-                <button id="clear">clear</button>
-                <button id="back">Back</button>
+                <button id="find" tabindex="-1">Find</button>
+                <button id="clear" tabindex="-1">clear</button>
+                <button id="back" tabindex="-1">Back</button>
             </div>
 
         </nav>
